@@ -12,12 +12,15 @@ print("=" * 10, "Section 2.3 string output", "=" * 10)
 # the first one displays your name
 # the second displays your major
 
+print("David Szczepanik")
+print("Associate's of Engineering Science, Computer Science")
 
 # TODO 2.3 using quotes
 print("=" * 10, "Section 2.3 using quotes", "=" * 10)
 # Write a statement that displays:
 # The dog says "woof!"
 
+print('The dog says "woof!"')
 
 # TODO 2.4 working with variables and printing their values
 print("=" * 10, "Section 2.4 printing variable values", "=" * 10)
@@ -27,12 +30,19 @@ print("=" * 10, "Section 2.4 printing variable values", "=" * 10)
 # 4) Assign 42 to the age variable
 # 5) Print the word age with a space and the variable value: age 42
 
+age = 19
+print(age)
+print("age", age)
+age = 42
+print("age", age)
 
 # TODO 2.6 keyboard input
 print("=" * 10, "Section 2.6 keyboard input", "=" * 10)
 # 1) Get the user to enter their name using an input statement and assign it to a variable called name
 # 2) Print a line that greets the user by name. Example: Hello, Meri
 
+name = input('What is your name? ')
+print("Hello,", name)
 
 # TODO 2.6 - 2.7 numeric input, performing calculations
 print("=" * 10, "Section 2.6-2.7 numeric input and calculations", "=" * 10)
@@ -45,12 +55,20 @@ print("=" * 10, "Section 2.6-2.7 numeric input and calculations", "=" * 10)
 #     Remember - when concatenating a variable that holds numbers you need to convert it to a string: str(variable)
 #     example: "Next year you will be " + str(age)
 
+age = int(input("Enter your age here. "))
+print("Your age is", age)
+age += 1
+print("Your age next year will be", str(age))
 
 # TODO 2.7 performing calculations
 print("=" * 10, "Section 2.7 performing calculations", "=" * 10)
 # 1) Calculate 7 divided by 2, print the equation and the result
 # 2) Calculate the remainder of 7 divided by 2, use the modulus operator, print the equation and the result
 
+num = 7 / 2
+print("7 / 2 = ", num)
+num = 7 % 2
+print("7 % 2 = ", num)
 
 # TODO 2.7 data conversion
 print("=" * 10, "Section 2.7 data conversion", "=" * 10)
@@ -62,9 +80,15 @@ print("2 + 2 = " + str(2 + 2))
 
 # 1) Write an equation that divides an integer by an integer, display the equation and the result with a print statement
 
+print("2 / 2 = " + str(2 / 2))
+
 # 2) Write an equation that divides an float by a float, display the equation and the result with a print statement
 
+print("2.5 / 2.5 = " + str(2.5 / 2.5))
+
 # 3) Write an equation that divides an float by an integer, display the equation and the result with a print statement
+
+print("2.5 / 2 = " + str(2.5 / float(2)))
 
 
 # TODO 2.8 Using print statement options
@@ -76,17 +100,24 @@ print('one', end=' ')
 print('two', end=' ')
 print('three')
 
+print('one', end = '-')
+print('two', end = '-')
+print('three')
+
 # TODO 2.8 Using escape codes
 print("=" * 10, "Section 2.8 escape codes", "=" * 10)
 # Modify the following line of code to add tabs between the days of the week
 print("Sunday Monday Tuesday Wednesday Thursday Friday Saturday")
-
+print("Sunday\tMonday\tTuesday\tWednesday\tThursday\tFriday\tSaturday")
 
 # TODO 2.8 Concatenating strings (Displaying Multiple Items with the + Operator)
 print("=" * 10, "Section 2.8 concatenating strings", "=" * 10)
 # 1) Have the user enter their name
 # 2) Greet the user, concatenate hello and their name into one string
 
+name = input(str("Enter your name here. "))
+greeting = ("Hello, " + name)
+print(greeting)
 
 # TODO 2.8 Formatting numbers
 print("=" * 10, "Section 2.8 formatting numbers", "=" * 10)
@@ -98,7 +129,7 @@ print("=" * 10, "Section 2.8 formatting numbers", "=" * 10)
 #               6,548,974,897.57
 number = 6548974897.5687979797
 print(number)
-
+print(format(number, '30,.2f'))
 
 # TODO 2.8 Formatting percentage
 print("=" * 10, "Section 2.8 formatting a percentage", "=" * 10)
@@ -108,3 +139,4 @@ print("=" * 10, "Section 2.8 formatting a percentage", "=" * 10)
 #     print(format(percent, '%'))
 percentage = .7654
 print(percentage)
+print(format(percentage, '%'))
