@@ -109,4 +109,4 @@ print(format(number, '30,.2f'))
 # - percent = .25834
 # - print(format(percent, '%'))
 percentage = .7654
-print(format(percentage, '%'))
+print(format(percentage, '.2%'))
