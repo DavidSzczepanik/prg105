@@ -1,5 +1,6 @@
 # Chicken Cordon Bleu Recipe Calculator
 # This program displays a recipe for 6 servings, then adjusts quantities based on user input
+# Link to the recipe: https://tasty.co/recipe/crispy-creamy-chicken-cordon-bleu
 
 # Base ingredient quantities for Chicken Cordon Bleu (serves 6)
 chicken_breasts = 4
